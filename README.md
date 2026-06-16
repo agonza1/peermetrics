@@ -67,7 +67,7 @@ Drilldown into each participant's connection to get insights about how their con
 ![image](https://github.com/peermetrics/peermetrics/assets/1862405/1849dcf8-abc8-4292-8ef9-a35aed671ef0)
 
 ## Demo
-Try the live [DEMO](https://peermetrics.io/how-it-works).
+Try the live [DEMO](https://peermetrics.io/demo/).
 
 ## How it works
 
@@ -91,38 +91,45 @@ Both **api** and **web** have the same backend:
 
 ## How to run locally
 
-### 1. Clone repo
+If you want the shortest path from clone to `first useful dashboard`, use
+the guide in [STARTER_KIT.md](STARTER_KIT.md).
 
-Fastest way to get started is to pull this repo and use docker compose
+Important platform note: the published Docker images are currently `amd64`
+only. On Apple Silicon (`arm64`) Macs, use Docker's x86 emulation:
+
+```sh
+DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose up
+```
+
+For most people evaluating Peermetrics locally, these are the only commands
+you need:
 
 ```sh
 git clone https://github.com/peermetrics/peermetrics
 cd peermetrics
-```
-
-### 2. Start docker
-
-**Option A: Using Docker Hub images (may have migration issues)**
-
-You can start all containers using the pre-built images:
-
-```sh
 docker compose up
 ```
 
-**Option B: Using development setup (Recommended)**
-
-For a more reliable setup that builds from source and includes all migrations:
+On Apple Silicon, replace the last line with:
 
 ```sh
-# First, clone the api and web repos in the same parent directory
-git clone https://github.com/peermetrics/api
-git clone https://github.com/peermetrics/web
-cd peermetrics
-
-# Then use the dev docker-compose file
-docker compose -f docker-compose.dev.yaml up
+DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose up
 ```
+
+Then open `http://localhost:8080` and follow
+[STARTER_KIT.md](STARTER_KIT.md) to:
+
+- create your first app
+- copy its API key
+- send one real test session
+- confirm the session appears in the dashboard
+
+If you are actively developing the `api` or `web` services from source
+instead of just validating the full stack, use the `Development` section
+below and `docker-compose.dev.yaml`.
+That development flow expects the separate `web` and `api` repositories to be
+checked out into `./web` and `./api`; cloning this repo alone is not enough for
+`docker-compose.dev.yaml`.
 
 The API service will automatically:
 - Run database migrations
