@@ -1,0 +1,16 @@
+{
+  "agent_definition_sha256": "4c4b6850c455355c106987318cd26c8f40aed8365d98a0e13503b6f3efd9975b",
+  "agent_id": "peermetrics",
+  "context_sha256": "033b043f1b9221db097f6ebb4792c26c4c8c8405ea0d0f7e2803a387f6868855",
+  "installed_agent_definition": ".codex/agents/peermetrics.toml",
+  "installed_context": ".codex/context/agents/peermetrics.md",
+  "installed_workspace": ".codex/project-workspace.json",
+  "kind": "codex_project_agent_binding_receipt",
+  "managed_instruction_end": "<!-- END MANAGED: codex-default-specialist -->",
+  "managed_instruction_start": "<!-- BEGIN MANAGED: codex-default-specialist -->",
+  "project_id": "d3a6133b-5c2a-430b-93cc-cb6cb72c14a0",
+  "project_label": "Peermetrics",
+  "schema_version": 1,
+  "source_root": "/Users/alberto/Documents/ChatGPT/openclaw-to-codex-migration",
+  "workspace_sha256": "5d81261b53866b4cb858add73c013622d45c8cb1c2077d15db1a827d2080f0b3"
+}

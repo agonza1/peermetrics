@@ -1,0 +1,32 @@
+{
+  "agent_id": "peermetrics",
+  "kind": "codex_project_workspace_binding",
+  "project_id": "d3a6133b-5c2a-430b-93cc-cb6cb72c14a0",
+  "project_label": "Peermetrics",
+  "schema_version": 1,
+  "workspace": {
+    "component_policy": "Open or freshly clone the specific component for implementation; do not assume one component represents the whole product.",
+    "component_repositories": [
+      "https://github.com/peermetrics/api.git",
+      "https://github.com/peermetrics/web.git",
+      "https://github.com/peermetrics/saas.git",
+      "https://github.com/peermetrics/sdk-js.git",
+      "https://github.com/peermetrics/webrtc-stats.git",
+      "https://github.com/peermetrics/peermetrics.github.io.git"
+    ],
+    "git": {
+      "branch": "master",
+      "commit": "4447defd13602af03904218b8e16dfde7cc7b80d",
+      "remotes": {
+        "origin": "https://github.com/agonza1/peermetrics.git",
+        "upstream": "https://github.com/peermetrics/peermetrics.git"
+      }
+    },
+    "kind": "multi_repository_hub",
+    "pending_review": [
+      "Dirty legacy component changes and environment files were intentionally not imported."
+    ],
+    "primary_root": "/Users/alberto/Documents/ChatGPT/Peermetrics",
+    "state": "umbrella_repository_history_imported"
+  }
+}
