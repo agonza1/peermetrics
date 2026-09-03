@@ -14,6 +14,12 @@
       "https://github.com/peermetrics/webrtc-stats.git",
       "https://github.com/peermetrics/peermetrics.github.io.git"
     ],
+    "component_review": {
+      "dirty_environment_or_deployment_files_imported": false,
+      "generated_or_temporary_artifacts_imported": false,
+      "reviewed_repositories": 7,
+      "status": "complete"
+    },
     "git": {
       "branch": "master",
       "commit": "4447defd13602af03904218b8e16dfde7cc7b80d",
@@ -23,10 +29,15 @@
       }
     },
     "kind": "multi_repository_hub",
-    "pending_review": [
-      "Dirty legacy component changes and environment files were intentionally not imported."
-    ],
+    "pending_review": [],
     "primary_root": "/Users/alberto/Documents/ChatGPT/Peermetrics",
-    "state": "umbrella_repository_history_imported"
+    "retained_component_checkout": {
+      "branch": "retained/openclaw-livekit-janus",
+      "commit": "d4bf4a3e22420fec96fda97d0df4a8eb8bdb9225",
+      "path": "/Users/alberto/Projects/peermetrics/saas",
+      "remote_status": "local_retention_only_no_user_fork_exists",
+      "working_tree": "clean"
+    },
+    "state": "umbrella_history_and_component_review_complete"
   }
 }
